@@ -6,12 +6,12 @@ require 'rails_backbone_moment/version'
 Gem::Specification.new do |spec|
   spec.name          = "rails_backbone_moment"
   spec.version       = RailsBackboneMoment::VERSION
-  spec.authors       = ["Evgeniy Zabolotniy"]
-  spec.email         = ["evgeniy.zabolotniy@gmail.com"]
+  spec.authors       = ["Homebase1"]
+  spec.email         = ["contact@joinhomebase.com"]
 
   spec.summary       = %q{Backbone Moment}
   spec.description   = %q{Simple wrapper for moment.js on backbone models}
-  spec.homepage      = "https://github.com/Fantaz1/rails-backbone-moment"
+  spec.homepage      = "https://github.com/pioneerworks/rails-backbone-moment"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -26,7 +26,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.10"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", ">= 2.4.10", "< 3"
+  spec.add_development_dependency "rake", ">= 13", "< 14"
   spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec_junit_formatter"
 end
